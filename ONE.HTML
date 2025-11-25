@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KCC ITM BookStore</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff9e6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #dc2626, #f59e0b);
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.header-text {
+    flex: 1;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.header-text h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Navigation */
+.nav {
+    background-color: #dc2626;
+    display: flex;
+}
+
+.nav-item {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Main Content */
+.main {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #fef3c7;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    color: #dc2626;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.dept-item {
+    padding: 10px;
+    margin: 8px 0;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+    border: 1px solid #fde68a;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.welcome h2 {
+    color: #dc2626;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Books */
+.books {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.book-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.book-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.book-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.book-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.book-price {
+    color: #dc2626;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Footer Features */
+.features {
+    display: flex;
+    background-color: #f8f9ff;
+    padding: 30px;
+    gap: 30px;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.feature h4 {
+    color: #4f46e5;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    color: #666;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <!-- Header -->
+    <div class="header">
+        <img class="logo" src="https://i.imgur.com/your-uploaded-logo.png" alt="KCC ITM Logo">
+        <div class="header-text">
+            <h1>KCC ITM COLLEGE</h1>
+            <h2>Book Store</h2>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <div class="nav-item">Home</div>
+        <div class="nav-item">Login</div>
+        <div class="nav-item">Registration</div>
+        <div class="nav-item">Catalogue</div>
+        <div class="nav-item">Cart</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Departments</h3>
+            <div class="dept-item">CSE</div>
+            <div class="dept-item">ECE</div>
+            <div class="dept-item">EEE</div>
+            <div class="dept-item">CIVIL</div>
+            <div class="dept-item">MECHANICAL</div>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+            <div class="welcome">
+                <h2>Welcome to Book Store</h2>
+                <p>Find your favourite books here! We offer a wide range of academic books and study materials for all departments.</p>
+            </div>
+
+            <!-- Books Grid -->
+            <div class="books">
+                <div class="book-card">
+                    <img class="book-img" src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&h=400&fit=crop" alt="Book">
+                    <div class="book-info">
+                        <div class="book-title">Data Structures</div>
+                        <div class="book-price">₹549</div>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img class="book-img" src="https://images.unsplash.com/photo-1589998059171-988d887df646?w=300&h=400&fit=crop" alt="Book">
+                    <div class="book-info">
+                        <div class="book-title">Circuit Theory</div>
+                        <div class="book-price">₹649</div>
+                    </div>
+                </div>
+
+                <div class="book-card">
+                    <img class="book-img" src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=300&h=400&fit=crop" alt="Book">
+                    <div class="book-info">
+                        <div class="book-title">Mathematics</div>
+                        <div class="book-price">₹499</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
