@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>KCC ITM BookStore - Registration</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #fef3c7; }
+.header { background: linear-gradient(180deg, #dc2626, #f59e0b); color: white; padding: 25px; display: flex; align-items: center;}
+.logo { width: 80px; height: 80px;}
+.header-text { flex: 1; text-align: center ; }
+.header h1 { font-size: 60px; margin-bottom: 5px; }
+.nav { background: #dc2626; display: flex;}
+.nav div { flex:1; padding: 10px; text-align: center; color: rgb(255, 255, 255);  }
+.container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+.content { background: white; padding: 40px; border-radius: 12px; }
+.content h2 { color: #dc2626; margin-bottom: 30px; font-size: 32px; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 8px; color: #000000; font-weight: 500; font-size: 16px; }
+.form-group select {width: 100%; padding: 12px; border: 2px solid #999; border-radius: 4px; }
+.radio-group { display: flex; gap: 20px; margin-top: 8px; }
+.radio-group label { display: flex; gap: 8px;  }
+.checkbox-group { display: flex; gap: 15px; margin-top: 8px; }
+.checkbox-group label { display: flex; align-items: center; gap: 8px; }
+.dob-group { display: flex; gap: 15px; }
+.submit-btn { background: #dc2626;color: white;padding: 14px 40px;border-radius: 80px;font-weight: 600; font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<img src="https://www.kccitm.edu.in/mbacollegedelhincr/images/kcc-logo.png" alt="KCC ITM Logo" class="logo">
+<div class="header-text">
+<h1>KCC ITM COLLEGE BOOK STORE</h1>
+</div>
+</div>
+<div class="nav">
+<div>Home</div>
+<div>Login</div>
+<div>Catalogue</div>
+<div>Cart</div>
+</div>
+<div class="container">
+<div class="content">
+<h2>📝 Registration Form</h2>
+<form>
+<div class="form-group">
+<label>1) Name</label>
+<input type="text" placeholder="Enter username" required>
+</div>
+<div class="form-group">
+<label>2) Password </label>
+<input type="password" placeholder="Enter password" required>
+</div>
+<div class="form-group">
+<label>3) E-mailId </label>
+<input type="email" placeholder="Enter email" required>
+</div>
+<div class="form-group">
+<label>4) Phone Number </label>
+<input type="text" placeholder="Enter phone number" required>
+</div>
+<div class="form-group">
+<label>5) Sex</label>
+<div class="radio-group">
+<label><input type="radio" name="sex" value="male" required> Male</label>
+<label><input type="radio" name="sex" value="female"> Female</label>
+<label><input type="radio" name="sex" value="other"> Other</label>
+</div>
+</div>
+<div class="form-group">
+<label>6) Date of birth</label>
+<div class="dob-group">
+<input type="text" placeholder="DD" maxlength="2" required>
+<input type="text" placeholder="MM" maxlength="2" required>
+<input type="text" placeholder="YYYY" maxlength="4" required>
+</div>
+</div>
+<div class="form-group">
+<label>7) Languages known </label>
+<div class="checkbox-group">
+<label><input type="checkbox" name="language" value="english"> English</label>
+<label><input type="checkbox" name="language" value="telugu"> Telugu</label>
+<label><input type="checkbox" name="language" value="hindi"> Hindi</label>
+</div>
+</div>
+<div class="form-group">
+<label>8) Address </label>
+<textarea placeholder="Enter address" required></textarea>
+</div>
+<button type="submit" class="submit-btn">Register</button>
+</form>
+</div>
+</div>
+</body>
+</html>
