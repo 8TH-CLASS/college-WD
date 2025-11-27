@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>KCC ITM BookStore - Cart</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #fef3c7; }
+.header { background: linear-gradient(180deg, #dc2626, #f59e0b); color: white; padding: 25px; display: flex; align-items: center;}
+.logo { width: 80px; height: 80px;}
+.header-text { flex: 1; text-align: center ; }
+.header h1 { font-size: 60px; margin-bottom: 5px; }
+.social { display: flex; gap: 10px; }
+.social a { width: 30px; height: 30px; background: rgba(185, 10, 238, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;  }
+.social a svg { width: 16px; height: 16px; fill: rgb(255, 255, 255); }
+.nav { background: #dc2626; display: flex;}
+.nav div { flex:1; padding: 10px; text-align: center; color: rgb(255, 255, 255);  }
+.container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+.content { background: white; padding: 30px; border-radius: 40px; }
+.content h2 { color: #dc2626; margin-bottom: 20px; font-size: 32px; }
+
+/* Cart Table */
+.cart-table { width: 100%;  }
+.cart-table th { background: #dc2626; color: white; padding: 15px; text-align: center; font-weight: 600; }
+.cart-table td { padding: 15px; border-bottom: 1px solid #ddd; text-align: center; }
+.dept-col { font-weight: 600; color: #333; font-weight: 600;}
+.book-name-col { color: #555; }
+.price-col, .quantity-col, .amount-col { color: #666; }
+.total-row { background: #f8f9ff; font-weight: bold; }
+.total-row td { color: #dc2626; font-size: 18px; padding: 20px 15px; }
+</style>
+</head>
+<body>
+<div class="header">
+<img src="https://www.kccitm.edu.in/mbacollegedelhincr/images/kcc-logo.png" alt="KCC ITM Logo" class="logo">
+<div class="header-text">
+<h1>KCC ITM COLLEGE BOOK STORE</h1>
+</div>
+</div>
+
+<div class="nav">
+<div>Home</div>
+<div>Login</div>
+<div>Registration</div>
+<div>Catalogue</div>
+<div>Cart</div>
+</div>
+
+<div class="container">
+<div class="content">
+<h2>🛒 Your Shopping Cart</h2>
+
+<table class="cart-table">
+<thead>
+<tr>
+<th>Department</th>
+<th>Book Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="dept-col">CSE</td>
+<td class="book-name-col">Data Structures</td>
+<td class="price-col">₹549</td>
+<td class="quantity-col">2</td>
+<td class="amount-col">₹1098</td>
+</tr>
+<tr>
+<td class="dept-col">CSE</td>
+<td class="book-name-col">Operating system</td>
+<td class="price-col">₹649</td>
+<td class="quantity-col">1</td>
+<td class="amount-col">₹649</td>
+</tr>
+<tr class="total-row">
+<td colspan="3"></td>
+<td>Total Amount</td>
+<td>₹1747</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+</body>
+</html>
